@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <html lang="es">
+    <head>
+       <meta charset="UTF-8">
+        <link rel="stylesheet" href="vista/estilos/estilos.css">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="estilos/animate.min.css">
+
   <link href="vista/dist/img/sevoto.png" rel="icon" type="image/png" />
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>SEVOTO</title>
-</head>
-<body>
+
 <script>
     function validateCedula() {
       var cedula = document.forms["loginForm"]["usuario"].value;
@@ -18,7 +18,7 @@
         Swal.fire({
           icon: 'error',
           title: 'Error',
-          text: 'La cédula debe ser mayor a 1000000'
+          text: 'Introduzca una cédula válida'
         });
       }
     }
@@ -34,28 +34,41 @@
     }
 </script>
 </head>
-<body>
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-6 col-lg-4">
-        <div class="card mt-5 animate__animated animate__bounceIn">
-          <div class="card-body">
-            <img src="vista/dist/img/sevoto.png" class="img-fluid mb-3" alt="Logo">
-            <form name="loginForm" action="controlador/loginctrl.php" method="POST">
-              <div class="form-group">
-                <label for="usuario">Usuario</label>
-                <input type="number" class="form-control" id="usuario" name="usuario" onblur="validateCedula()" required required>
-              </div>
-              <div class="form-group">
-                <label for="password">Contraseña</label>
-                <input type="password" class="form-control" id="pass" name="pass" onblur="validatePassword()" required>
-              </div>
-              <button type="submit" class="btn btn-primary btn-block">Iniciar sesión</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+
+<body background="vista/dist/img/New.jpg">
+
+        <div class="container">
+
+             <div class="row justify-content-center">
+              
+                 <div class="col-md-6 col-lg-4">
+
+
+                    <div class="mt-5 animate__animated animate__bounceIn">
+                      
+                        <div class="box">
+                            <form name="loginForm" action="controlador/loginctrl.php" method="POST">
+                            
+                                  <img class="img-logo" src="vista/dist/img/sevoto.png" class="img-fluid mb-3" alt="Logo">   
+                         
+		                           
+			                             <div class="inputBox">
+                                      <div class="form-group">
+                                        <label for="usuario">Usuario</label>
+                                        <input type="number" class="form-control" id="usuario" name="usuario" onblur="validateCedula()" required>
+                                      </div>       
+                                      <div class="form-group">
+                                        <label for="password">Contraseña</label>
+                                        <input type="password" class="form-control" id="pass" name="pass" onblur="validatePassword()" required>
+                                      </div>
+                                      <input type="submit" value="Iniciar Sesión">
+                                    </div>
+                                </div>
+                              </form>
+                        </div>
+                      </div>
+                   </div>
+
+                   </div>
 </body>
 </html>
