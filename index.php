@@ -4,7 +4,7 @@
        <meta charset="UTF-8">
         <link rel="stylesheet" href="vista/estilos/estilos.css">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <link rel="stylesheet" href="estilos/animate.min.css">
+
 
   <link href="vista/dist/img/sevoto.png" rel="icon" type="image/png" />
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -44,7 +44,7 @@
                  <div class="col-md-6 col-lg-4">
 
 
-                    <div class="mt-5 animate__animated animate__bounceIn">
+                   <div class="zoom-layer">
                       
                         <div class="box">
                             <form name="loginForm" action="controlador/loginctrl.php" method="POST">
