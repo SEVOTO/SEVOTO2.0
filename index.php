@@ -54,11 +54,11 @@
 		                           
 			                             <div class="inputBox">
                                       <div class="form-group">
-                                        <label for="usuario">Usuario</label>
+                                        <label for="usuario" class="label"><b>Usuario</b></label>
                                         <input type="number" class="form-control" id="usuario" name="usuario" onblur="validateCedula()" required>
                                       </div>       
                                       <div class="form-group">
-                                        <label for="password">Contraseña</label>
+                                        <label for="password" class="label"><b>Contraseña</b></label>
                                         <input type="password" class="form-control" id="pass" name="pass" onblur="validatePassword()" required>
                                       </div>
                                       <input type="submit" value="Iniciar Sesión">
