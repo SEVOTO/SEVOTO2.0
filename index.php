@@ -55,7 +55,7 @@
 			                             <div class="inputBox">
                                       <div class="form-group">
                                         <label for="usuario" class="label"><b>Usuario</b></label>
-                                        <input type="number" class="form-control" id="usuario" name="usuario" onblur="validateCedula()" required>
+                                        <input type="number"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="8" class="form-control" id="usuario" name="usuario" onblur="validateCedula()" required>
                                       </div>       
                                       <div class="form-group">
                                         <label for="password" class="label"><b>Contraseña</b></label>
